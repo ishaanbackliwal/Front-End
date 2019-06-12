@@ -1,0 +1,39 @@
+﻿.majorHeading {
+    font-family: Georgia;
+    font-weight: bold;
+    color: black;
+    font-size: xx-large;
+}
+
+.minorHeading {
+    font-family: Georgia;
+    font-weight: bold;
+    color: #557A95;
+    font-size: x-large;
+}
+
+.bodyText {
+    font-faimly: Georgia;
+    color: black;
+    font-size: medium;
+}
+
+.buttonFormatting {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.buttonFormatting:hover {
+    background-color: white;
+    color: #557A95;
+}
