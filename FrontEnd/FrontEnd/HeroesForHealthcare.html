@@ -1,36 +1,73 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CodeTheWay_StyleSheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CodeTheWay_StyleSheet.css" />
     <title>Heroes for Healthcare</title>
 </head>
 <body class="bodyText" onload="showHide()">
-    <img src="images/heroes for healthcare/Heroes Logo.png" />
-    <p class="majorHeading">Heroes for Healthcare</p>
-    <img src="images/heroes for healthcare/Heroes2.png" align="left" width="300px" height="200px" />
-    <p class="minorHeading">Mission</p>
-    <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
-    <img src="images/heroes for healthcare/Heroes3.png" / align="right" width="300px" height="200px">
-    <p class="minorHeading">Unemplyed Veterans</p>
-    <p>
-        Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.
-    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2" align="center">
+                <img src="images/heroes for healthcare/Heroes Logo.png" />
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <p class="majorHeading">Heroes for Healthcare</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" align="right">
+                <a href="LifeNavigators.html" class="navLink">Life Navigators</a>
+            </div>
+            <div class="col-sm-4" align="center">
+                <a href="Index_Backliwal.html" class="navLink">Home</a>
+            </div>
+            <div class="col-sm-4" align="left">
+                <a href="Media.html" class="navLink">Media</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="minorHeading">Mission</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>Our non-profit organization is a resource for our military personnel to start a career in healthcare.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="minorHeading">Unemplyed Veterans</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p>
+                            Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src="images/heroes for healthcare/Heroes2.png" align="left" width="300px" height="200px" />
+            </div>
+        </div>
+    </div>
     <ul>
         <li>
-            <div class="tooltip">
+            <div data-toggle="tooltip" data-placement="bottom" title="453,000 in 2016">
                 Number of Unemplyed Veterans
-                <div class="tooltiptext">
-                    453,000 in 2016
-                </div>
             </div>
         </li>
         <li>
-            <div class="tooltip">
+            <div data-toggle="tooltip" data-placement="bottom" title="Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans">
                 When did this upward trend start?
-                <div class="tooltiptext">
-                    Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans
-                </div>
             </div>
         </li>
     </ul>
@@ -58,4 +95,7 @@
             x.style.display = "block";
         }
     }
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
