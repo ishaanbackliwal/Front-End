@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="CodeTheWay_StyleSheet.css" />
     <title>Code the Way</title>
 </head>
-<body class="bodyText" onload="showHide()">
+<body class="bodyText" onload="showHide(); changeColor();">
     <img src="images/code the way/CodeTheWay Logo.png" />
-    <p class="majorHeading">Code the Way</p>
+    <div>
+        <p class="majorHeading" id="color">Code the Way</p>
+    </div>
     <p class="minorHeading">Mission</p>
     <p>Code the Way facilitates the collaboration of schools, companies, and nonprofits to: (1) Offer students advanced computer science training and real-world job experiences working on projects that benefit nonprofits; (2) Increase certified computer science teachers; and (3) Contribute to the technology talent base.</p>
     <p>Code the Way Model Includes:</p>
@@ -62,5 +64,18 @@
         else {
             x.style.display = "block";
         }
+    }
+    function getRandomColor() {
+        var color = "";
+        for (var i = 0; i < 3; i++) {
+            var sub = Math.floor(Math.random() * 256).toString(16);
+            color += (sub.length == 1 ? "0" + sub : sub);
+        }
+        return "#" + color;
+    }
+    function changeColor() {
+        var c = getRandomColor();
+        var title = document.getElementById("color");
+        title.style.color = c;
     }
 </script>
