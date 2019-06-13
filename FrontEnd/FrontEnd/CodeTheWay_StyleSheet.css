@@ -3,6 +3,7 @@
     font-weight: bold;
     color: black;
     font-size: xx-large;
+    text-align: center;
 }
 
 .minorHeading {
@@ -18,7 +19,7 @@
     font-size: medium;
 }
 
-.buttonFormatting {
+.navLink {
     background-color: #557A95;
     border: 2px solid #557A95;
     color: white;
