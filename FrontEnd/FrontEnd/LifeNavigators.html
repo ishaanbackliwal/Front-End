@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="CodeTheWay_StyleSheet.css" />
     <title>Life Navigators</title>
 </head>
-<body class="bodyText">
+<body class="bodyText" onload="showHide()">
     <p class="majorHeading">Life Navigators</p>
     <p class="minorHeading">Mission</p>
     <p>
@@ -17,38 +17,54 @@
     <p>
         Life Navigators envisions an inclusive community where individuals with disabilities and their support networks experience full participation and maximized independence. Our community will value the rights, hopes, dreams and contributions of all people with disabilities.
     </p>
-    <p class="minorHeading">History</p>
+    <button onclick="showHide()" class="buttonFormatting">Show History</button>
+    <div id="history">
+        <p class="minorHeading">History</p>
+        <div class="bodyText">
+            <p>
+                Life Navigators was founded by parents who were committed to developing programs and educational opportunities for their children with intellectual and developmental disabilities.
+            </p>
+            <ul>
+                <li>
+                    1949: Concerned families founded the organization.
+                </li>
+                <li>
+                    1950’s: Initiated first day school for school–aged children with severe developmental disabilities.
+                </li>
+                <li>
+                    1960’s: Started Milwaukee’s first Information and Referral Program focused on Disability Services.
+                </li>
+                <li>
+                    1970’s: Initiated Wisconsin’s first Citizen Advocacy Program matching individuals with disabilities with community volunteers for peer and social support.Became the first Corporate Guardianship provider in Milwaukee County to be licensed by the State of Wisconsin.
+                </li>
+                <li>
+                    1980’s: Hosted the first Challenger Golf Outing to raise funds from individuals and corporations to support programs. Designated as regional site of the National On–The–Job Training Project to develop community–based employment opportunities for persons with disabilities.
+                </li>
+                <li>
+                    1990’s: Initiated Milwaukee’s first Trust Program, which allowed families to plan for the financial future of their loved one with a disability.
+                </li>
+                <li>
+                    2000’s: Purchased and renovated a new home for our offices located at 7203 West Center Street, Wauwatosa, Wisconsin.
+                </li>
+                <li>
+                    2010’s: Expanded the Trust Program by offering a second trust option, the Trust II Pooled Trust.
+                </li>
+            </ul>
+        </div>
+    </div>
     <p>
-        Life Navigators was founded by parents who were committed to developing programs and educational opportunities for their children with intellectual and developmental disabilities.
-    </p>
-    <ul>
-        <li>
-            1949: Concerned families founded the organization.
-        </li>
-        <li>
-            1950’s: Initiated first day school for school–aged children with severe developmental disabilities.
-        </li>
-        <li>
-            1960’s: Started Milwaukee’s first Information and Referral Program focused on Disability Services.
-        </li>
-        <li>
-            1970’s: Initiated Wisconsin’s first Citizen Advocacy Program matching individuals with disabilities with community volunteers for peer and social support.Became the first Corporate Guardianship provider in Milwaukee County to be licensed by the State of Wisconsin.
-        </li>
-        <li>
-            1980’s: Hosted the first Challenger Golf Outing to raise funds from individuals and corporations to support programs. Designated as regional site of the National On–The–Job Training Project to develop community–based employment opportunities for persons with disabilities.
-        </li>
-        <li>
-            1990’s: Initiated Milwaukee’s first Trust Program, which allowed families to plan for the financial future of their loved one with a disability.
-        </li>
-        <li>
-            2000’s: Purchased and renovated a new home for our offices located at 7203 West Center Street, Wauwatosa, Wisconsin.
-        </li>
-        <li>
-            2010’s: Expanded the Trust Program by offering a second trust option, the Trust II Pooled Trust.
-        </li>
-    </ul>
-    <p>
-        <p align="center"><a href="Index_Backliwal.html" class="navLink">HOME</a></p>
+    <p align="center"><a href="Index_Backliwal.html" class="navLink">HOME</a></p>
     </p>
 </body>
 </html>
+<script>
+    function showHide() {
+        var x = document.getElementById("history");
+        if (x.style.display !== "none") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
